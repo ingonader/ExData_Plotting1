@@ -1,4 +1,29 @@
-## Introduction
+## Description of Assignment Solution
+
+### Files
+
+* `load-data.R` ... code that is used to load the data. This file is sourced by each of the other R scripts to avoid repetition of code.
+  * If the data is not found in the current working directory, the data will be downloaded and unzipped by this script.
+* `plot1.R` ... R script that produces the file `plot1.png`
+* `plot2.R` ... R script that produces the file `plot2.png`
+* `plot3.R` ... R script that produces the file `plot3.png`
+* `plot4.R` ... R script that produces the file `plot4.png`
+
+### Prerequisites
+
+The R packages `downloader` and `gdata` have to be installed in your R system. The former is used for downloading the file, if it is not found in the working directory, and the latter is used to inspect the size of the objects in the workspace.
+
+### Running the script
+
+The individual plots are produced by running the corresponding R files. For example, to produce plot 1, you need to run the following command (on the command line):
+
+```
+Rscript plot1.R
+```
+
+This will produce the file `plot1.png`.
+
+## Introduction (to the original Assignment)
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
